@@ -1,0 +1,7 @@
+@font-face{
+    font-family: 'ninja';
+    src: url('./fonts/webfonts_Ninja-naruto/Ninja-Naruto.ttf.eot');
+    src: url('./fonts/webfonts_Ninja-naruto/Ninja-Naruto.ttf.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/webfonts_Ninja-naruto/Ninja-Naruto.ttf.woff') format('woff'),
+         url('./fonts/webfonts_Ninja-naruto/Ninja-Naruto.ttf.svg#webfont') format('svg');
+}

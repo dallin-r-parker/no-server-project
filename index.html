@@ -1,3 +1,5 @@
+<!-- NOTE: add google analytics -->
+<!-- NOTE: host to gitHub -->
 <!doctype html>
 <html ng-app="readingApp">
 <head>
@@ -6,16 +8,39 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <!-- CSS link section -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./font.css">
+    <link rel="stylesheet" href="./main.css">
 
     <title>The Reading Ninja</title>
 </head>
 <body ng-controller='mainCtrl'>
 
+<!-- NOTE: nav is fixed and will show up on every page -->
+<nav class="nav-header">
+
+    <section class="menu-rad-reader" id="center-content">
+      <a ui-sref="readingLog"><h1>Rad <br> Reader</h1></a>  <!-- FIXME: readingLog is not working -->
+    </section>
+      <!-- NOTE: Rad Reader  -->
+    <section class="menu-rad-rec" id="center-content">
+      <a ui-sref="recommendation"><h1>Rad <br> Books</h1></a>
+    </section>
+          <!-- NOTE: Rad Books is a library of books -->
+    <section class="ninja-logo">
+      <a ui-sref="home"><img src="./img/ninja-logo.jpg" alt="Reading Ninja Logo" id="ninja-logo"></a>
+    </section>
+
+    <section class="menu-rad-ninjas" id="center-content">
+      <a ui-sref="becoming"><h1>Rad <br> Ninjas</h1></a>
+    </section>
+    <!-- NOTE: This might turn into a directive -->
+</nav>
+
+ <!-- NOTE: all template states will be injected into the ui-view -->
+                                <ui-view></ui-view>
 
 
 
@@ -25,15 +50,39 @@
 
 
 
+                                      <!-- NOTE: Style the footer -->
+<footer class="footer-wrapper">
+  <p id="become-a-ninja">become a ninja.</p>
+  <input type="text" placeholder="Email Address" id="email-input">
 
-                <!-- This is the angular CDN  -->
+<p id="follow-insta-ninja"><span id="different-font"><i class="fa fa-instagram" aria-hidden="true"> </i>@</span>thereadingninja</p>
+
+    <section>
+      <img ng-src='./img/ninja-logo.jpg' alt="Reading Ninja Logo" id="footer-ninja-logo" ng-click='suggestion()'>
+    </section>
+</footer>
+
+
+
+                        <!-- This is the angular CDN  -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
-                <!-- ADD SCRIPT FILES -->
+                        <!-- angular ui-router CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+                              <!--jQuery-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+                      <!-- local JavaScript Files -->
+<script src="js/typed.js"></script>
 <script src="app.js"></script>
 <script src="js/mainService.js"></script>
 <script src="js/mainCtrl.js"></script>
-<script src="js/logView/logCtrl.js"></script>
+<script src="js/homeView/homeCtrl.js"></script>
+<script src="js/becomeNinjaView/becomeNinjaCtrl.js"></script>
+<script src="js/readingLogView/readingLogCtrl.js"></script>
 <script src="js/recommendationView/recommendationCtrl.js"></script>
+<script src="js/homeView/bookRecommendationService.js"></script>
+<script src="js/homeView/bookDir.js"></script>
+<script src="js/becomeNinjaView/typingDir.js"></script>
+
 
 
 </body>

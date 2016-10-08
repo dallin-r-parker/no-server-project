@@ -1,0 +1,35 @@
+
+  <div id="main">
+    <p id="typing-text"></p>
+  </div>
+
+  <section class="hero-img-wrapper">
+    <!-- NOTE: I would like to add jQuery typing effect over this image -->
+    <img ng-src='./img/book2-hero.jpeg' id="hero-book">
+    <i class="fa fa-angle-down" aria-hidden="true" class="nav-down-arrow"></i>
+  </section>
+  <section class="book-title">
+    <a ui-sref="readingLog"><h1>Explore Books</h1></a>
+  </section>
+
+  <section class="center-book-wrapper">
+    <section ng-repeat='key in getImg'>
+      <img ng-src='{{key.img}}' class="book-style">
+    </section>
+  </section>
+
+<section class="main-recommend-container">
+  <section class="book-title">
+  <a ui-sref='recommendation'><h1 id="second-book-title">Recommend Rad <br> Books</h1></a>
+  </section>
+
+
+<book-dir></book-dir>
+
+
+<section class="main-becoming-ninja-wrapper">
+  <section class="book-title">
+  <a ui-sref='becoming'><h1 id="third-book-title">Become A Rad Ninja</h1></a>
+    <a ui-sref='becoming'><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+  </section>
+</section>
