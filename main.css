@@ -56,16 +56,27 @@
     height: 635px;
 }
 
+#hero-typing-style{
+  z-index: 50;
+  position: absolute;
+  font-family: 'courier', sans-serif;
+  font-size: 5.5em;
+  color: #fff;
+  bottom: 370px;
+  right: 450px;
+
+}
+
 #home-typing-text {
   position: absolute;
   z-index: 50;
   font-family: 'courier', sans-serif;
-  font-size: 7em;
+  font-size: 8em;
   color: #fff;
-  bottom: 300px;
+  bottom: 250px;
   right: 100px;
-
 }
+
 #hero-book {
   z-index: -1;
 }
