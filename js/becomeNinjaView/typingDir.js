@@ -10,8 +10,8 @@ angular.module('readingApp')
       link: function (scope, element, attribute){
 
       $("#typing-text").typed({
-        strings: ["So you want to be a Ninja!", "Do you have what it takes?",  "Follow the steps"],
-        typeSpeed: 0
+        strings: ["So you want to be a Ninja?", "Do you have what it takes?",  "Follow the steps "],
+        typeSpeed: 10
           });
         //<-- End of jQuery script
       }

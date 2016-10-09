@@ -25,6 +25,6 @@ angular.module('readingApp', ['ui.router'])
   .state('becoming', {
     templateUrl: './js/becomeNinjaView/becomeNinjaTmpl.html',
     controller: 'becomeNinjaCtrl',
-    url: '/login'
+    url: '/becoming'
   })
 });
