@@ -1,4 +1,5 @@
 angular.module('readingApp').service('mainService', function($http) {
+  
     var bookImg = [
         {
           img: './img/book1.JPG'
