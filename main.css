@@ -39,6 +39,11 @@
     padding: 5vh;
 }
 
+.book-title:hover {
+  transition: scale(1.2);
+  letter-spacing: 10px;
+}
+
 
 
 /* NOTE: above styles the navigation that shows on every page */
@@ -90,6 +95,10 @@
   width: 100px;
 }
 
+.fa-angle-down:hover{
+  color: #adadad;
+}
+
 
 .center-book-wrapper {
     display: flex;
@@ -110,8 +119,9 @@
 
 .book-style:hover {
   transform: scale(1.1);
-
+  opacity: .20;
  }
+
 
 .book-recommendation-wrapper {
   display: flex;
@@ -141,7 +151,10 @@
   margin: 15px 0px 0px 10px;
   border: solid gray 3px;
   border-radius: 3px;
-
+}
+/* HACK: button clicking effect */
+#recommendation-submit:active {
+  transform: scale(.90);
 }
 
 #second-book-title {
@@ -160,12 +173,12 @@
 .fa-long-arrow-right {
   font-size: 7em;
   color: #FC4B32;
-
   margin-top: -40px;
 }
 
 
-/* FIXME: A LOT of styling and functionality to be done */
+
+
 
 .footer-wrapper {
     background: #d8d8d8;
@@ -286,20 +299,27 @@ input {
   color: #FC4B32;
 }
 
+
 .step-one {
   height: 100vh;
+  width: 100%;
+  border-radius: 10px;
   background: #FD9337;
   opacity: .65;
 }
 
 .step-two {
   height: 100vh;
+  width: 100%;
+  border-radius: 10px;
   background: #FC4B32;
   opacity: .65;
 }
 
 .step-three {
   height: 100vh;
+  width: 100%;
+  border-radius: 10px;
   background:  #88D32A;
   opacity: .65;
   margin-bottom: -40px;
