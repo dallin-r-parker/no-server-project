@@ -5,7 +5,7 @@ angular.module('readingApp').controller('mainCtrl', ["$scope", "mainService", fu
 }]);
 
 angular.module('readingApp').service('mainService', ["$http", function($http) {
-
+  
     var bookImg = [
         {
           img: './img/book1.JPG'
@@ -40,6 +40,11 @@ angular.module('readingApp').service('mainService', ["$http", function($http) {
         console.log(bookImg);
         return bookImg;
       }
+
+
+
+
+
 }]);
 
 // The MIT License (MIT)
@@ -483,7 +488,15 @@ angular.module('readingApp').service('mainService', ["$http", function($http) {
 
 angular.module('readingApp').controller('becomeNinjaCtrl', ["$scope", function($scope) {
 
-
+  $(function(){
+      $('#anchor-one').click(function(){
+          $('html, body').animate({
+              scrollTop: $('#step1-color-container').offset().top},
+              2000
+          );
+      return false;
+      });
+  });
 
 }]);
 
@@ -504,6 +517,26 @@ angular.module('readingApp')
         backDelay: 1500
           });
         //<-- End of jQuery script
+      }
+    }
+  });
+
+angular.module('readingApp')
+  .directive('homeTypingDir', function() {
+
+    return {
+      restrict: 'E',
+      templateUrl: './js/homeTypingDir/homeTypingTmpl.html',
+      scope: {
+
+      },
+      link: function(scope, element, attribute) {
+
+      $("#home-typing-text").typed({
+        strings: ["RAD", "COOL", "FUN", "SMART", "AWESOME","RADICAL!"],
+        typeSpeed: 50
+          });
+              //<-- End of jQuery script
       }
     }
   });
@@ -545,26 +578,6 @@ angular.module('readingApp').controller('homeCtrl', ["$scope", "mainService", fu
     $scope.getImg = mainService.getImg();
 
 }]);
-
-angular.module('readingApp')
-  .directive('homeTypingDir', function() {
-
-    return {
-      restrict: 'E',
-      templateUrl: './js/homeTypingDir/homeTypingTmpl.html',
-      scope: {
-
-      },
-      link: function(scope, element, attribute) {
-
-      $("#home-typing-text").typed({
-        strings: ["RAD", "COOL", "FUN", "SMART", "AWESOME","RADICAL!"],
-        typeSpeed: 50
-          });
-              //<-- End of jQuery script
-      }
-    }
-  });
 
 angular.module('readingApp').controller('readingLogCtrl', ["$scope", "bookRecommendationService", function($scope, bookRecommendationService) {
 

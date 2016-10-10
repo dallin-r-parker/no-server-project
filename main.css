@@ -1,3 +1,8 @@
+body, html {
+  width: 100vw;
+  height: 100vh;
+}
+
 .nav-header {
     height: 165px;
     width: 100%;
@@ -289,7 +294,7 @@ input {
 /*styling becoming a ninja page (Rad Ninja)*/
 
 .becoming-hero-img-wrapper>#hero-forest{
-  width: 100vw;
+  width: 100%;
   height: 620px;
   opacity: .80;
 }
@@ -297,6 +302,7 @@ input {
 .becoming-hero-img-wrapper {
   position: relative;
   text-align: center;
+  width: 100%;
 }
 
 .typed-cursor {
@@ -345,11 +351,16 @@ input {
   padding: 18px;
 }
 
+.step1-text:hover {
+  transform: scale(1.1);
+}
+
 #follow-insta-ninja2 {
   font-family: 'ninja', sans-serif;
   color: #000;
   font-size: 3.2em;
-  margin-top: 520px;
+  margin-top: 600px;
+  margin-left: 200px;
   letter-spacing: 5px;
 }
 
@@ -359,9 +370,8 @@ input {
   flex-direction: column;
   color: #fff;
   font-size: 10em;
-  margin-left: -175px;
-  margin-bottom: -300px;
-  margin-right: 15px;
+  margin-left: -250px;
+  margin-bottom: -450px;
 }
 
 #step2-color-container {
@@ -371,12 +381,6 @@ input {
 #step3-color-container {
   background: #fC4B32;
   margin-bottom: -40px;
-}
-
-.text-styling {
-  font-family: 'courier', sans-serif;
-  font-size: 4em;
-  margin: 10vh 0 0 10vh;
 }
 
 
