@@ -11,7 +11,8 @@ angular.module('readingApp')
 
       $("#typing-text").typed({
         strings: ["So you want to be a Ninja?", "Do you have what it takes?",  "Follow the steps "],
-        typeSpeed: 10
+        typeSpeed: 10,
+        backDelay: 1500
           });
         //<-- End of jQuery script
       }

@@ -10,10 +10,6 @@
     letter-spacing: 10px;
 }
 
-.typed-cursor {
-    display: none;
-}
-
 #center-content {
     margin-top: 35px;
 }
@@ -44,62 +40,68 @@
 }
 
 .book-title:hover {
-    transition: scale(1.2);
-    letter-spacing: 10px;
+  transition: scale(1.2);
+  letter-spacing: 10px;
 }
+
 
 
 /* NOTE: above styles the navigation that shows on every page */
 
-
 /*HOME VIEW*/
+/* NOTE: This gets rid of the pipe */
+/*.typed-cursor{
+  color: white;
+}*/
 
 .hero-img-wrapper {
-    text-align: center;
+  text-align: center;
 }
 
 .hero-img-wrapper>#hero-book {
-    position: relative;
+  position: relative;
     width: 100%;
     height: 635px;
 }
 
-#hero-typing-style {
-    z-index: 50;
-    position: absolute;
-    font-family: 'courier', sans-serif;
-    font-size: 5.5em;
-    color: #fff;
-    bottom: 370px;
-    right: 450px;
+#hero-typing-style{
+  z-index: 50;
+  position: absolute;
+  font-family: 'courier', sans-serif;
+  font-size: 5.5em;
+  color: #fff;
+  bottom:370px;
+  right: 450px;
+
 }
 
 #home-typing-text {
-    position: absolute;
-    z-index: 50;
-    font-family: 'courier', sans-serif;
-    font-size: 8em;
-    color: #fff;
-    bottom: 250px;
-    right: 100px;
+  position: absolute;
+  z-index: 50;
+  font-family: 'courier', sans-serif;
+  font-size: 8em;
+  color: #fff;
+  bottom: 220px;
+  right: 100px;
 }
 
 #hero-book {
-    z-index: -1;
+  z-index: -1;
 }
 
 .fa-angle-down {
-    color: #fff;
-    font-size: 10em;
-    position: absolute;
-    z-index: 1;
-    margin-top: -150px;
-    width: 100px;
+  color: #fff;
+  font-size: 10em;
+  position: absolute;
+  z-index: 1;
+  margin-top: -150px;
+  width: 100px;
 }
 
-.fa-angle-down:hover {
-    color: #adadad;
+.fa-angle-down:hover{
+  color: #adadad;
 }
+
 
 .center-book-wrapper {
     display: flex;
@@ -116,65 +118,62 @@
 }
 
 .book-style:hover {
-    transform: scale(1.1);
-    opacity: .20;
-}
+  transform: scale(1.1);
+  opacity: .20;
+ }
+
 
 .book-recommendation-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px auto;
-}
+  display: flex;
+  justify-content: center;
+  margin-top: 10px auto;
 
+}
 
 /* NOTE: font-awesome book icon */
-
 .fa-book {
-    font-size: 4em;
-    padding-top: 5px;
+  font-size: 4em;
+  padding-top: 5px;
 }
 
-.recommendation-style {
-    width: 70%;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 30px;
-    margin-left: 20px;
-}
+ .recommendation-style {
+   width: 70%;
+   border-radius: 5px;
+   text-align: center;
+   font-size: 30px;
+   margin-left: 20px;
+ }
 
 #recommendation-submit {
-    font-family: 'courier', sans-serif;
-    font-size: 2em;
-    margin-left: 10px;
-    margin: 15px 0px 0px 10px;
-    border: solid gray 3px;
-    border-radius: 3px;
+  font-family: 'courier', sans-serif;
+  font-size: 2em;
+  margin-left: 10px;
+  margin: 15px 0px 0px 10px;
+  border: solid gray 3px;
+  border-radius: 3px;
 }
-
-
 /* HACK: button clicking effect */
-
 #recommendation-submit:active {
-    transform: scale(.90);
+  transform: scale(.90);
 }
 
 #second-book-title {
-    color: #FD9337;
+  color: #FD9337;
 }
 
 #third-book-title {
-    font-size: 3em;
-    color: #88D32A;
+  font-size: 3em;
+  color: #88D32A;
 }
 
 .main-becoming-ninja-wrapper {
-    text-align: center;
+  text-align: center;
 }
 
 .fa-long-arrow-right {
-    font-size: 7em;
-    color: #FC4B32;
-    margin-top: -40px;
+  font-size: 7em;
+  color: #FC4B32;
+  margin-top: -40px;
 }
 
 .footer-wrapper {
@@ -208,7 +207,6 @@ input {
 #email-input {
     width: 90%;
 }
-
 
 /* HACK: This is how I edit the placeholder */
 
@@ -273,56 +271,114 @@ input {
 }
 
 .main-book-input-wrapper {
-    width: 70%;
-    height: 80px;
-    line-height: 80px;
-    background: #d8d8d8;
-    font-family: 'courier', sans-serif;
-    font-size: 2.5em;
-    color: #FD9337;
-    border: solid #d8d8d8 2px;
-    border-radius: 5px;
-    /*padding: 15px;*/
-    margin-top: 20px;
-    text-align: center;
-    margin: 20px 200px;
+  width: 70%;
+  height: 80px;
+  line-height: 80px;
+  background: #d8d8d8;
+  font-family: 'courier', sans-serif;
+  font-size: 2.5em;
+  color: #FD9337;
+  border: solid #d8d8d8 2px;
+  border-radius: 5px;
+  /*padding: 15px;*/
+  margin-top: 20px;
+  text-align: center;
+  margin: 20px 200px;
 }
-
 
 /*styling becoming a ninja page (Rad Ninja)*/
 
+.becoming-hero-img-wrapper>#hero-forest{
+  width: 100vw;
+  height: 620px;
+  opacity: .80;
+}
+
+.becoming-hero-img-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.typed-cursor {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+
 #typing-text {
-    font-family: 'courier', sans-serif;
-    font-size: 4em;
-    text-align: center;
-    margin-top: 20px;
-    color: #FC4B32;
+  z-index: 22;
+  position: absolute;
+  /*height: 100vh;*/
+  font-family: 'courier', sans-serif;
+  font-size: 5em;
+  left: 10%;
+  top: 25%;
+  color: #fff;
 }
 
-.step-one {
-    height: 100vh;
-    width: 100%;
-    border-radius: 10px;
-    background: #FD9337;
-    opacity: .65;
+
+.step-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  opacity: .65;
 }
 
-.step-two {
-    height: 100vh;
-    width: 100%;
-    border-radius: 10px;
-    background: #FC4B32;
-    opacity: .65;
+#step1-color-container {
+  background: #88D32A;
+  margin-top: -3px;
 }
 
-.step-three {
-    height: 100vh;
-    width: 100%;
-    border-radius: 10px;
-    background: #88D32A;
-    opacity: .65;
-    margin-bottom: -40px;
+.step1-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 230px;
+  margin-right: 40px;
+  font-size: 3.5em;
+  font-family: 'courier', sans-serif;
+  color: #000;
+  border: solid 3px #fff;
+  width: 100%;
+  height: 20vh;
+  padding: 18px;
 }
+
+#follow-insta-ninja2 {
+  font-family: 'ninja', sans-serif;
+  color: #000;
+  font-size: 3.2em;
+  margin-top: 520px;
+  letter-spacing: 5px;
+}
+
+#insta-styling {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 10em;
+  margin-left: -175px;
+  margin-bottom: -300px;
+  margin-right: 15px;
+}
+
+#step2-color-container {
+  background: #FD9337;
+}
+
+#step3-color-container {
+  background: #fC4B32;
+  margin-bottom: -40px;
+}
+
+.text-styling {
+  font-family: 'courier', sans-serif;
+  font-size: 4em;
+  margin: 10vh 0 0 10vh;
+}
+
 
 
 /*color: #FD9337;

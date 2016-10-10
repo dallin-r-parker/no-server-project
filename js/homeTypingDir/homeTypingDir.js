@@ -17,4 +17,3 @@ angular.module('readingApp')
       }
     }
   });
-  //restrict with A,E, or AE
