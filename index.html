@@ -19,10 +19,10 @@
 </head>
 <body ng-controller='mainCtrl'>
 
-<!-- NOTE: nav is fixed and will show up on every page -->
+<!-- NOTE: nav is position:fixed and will show up on every page -->
 <nav class="nav-header">
     <section class="menu-rad-reader" id="center-content">
-      <a ui-sref="readingLog"><h1>Rad <br> Reader</h1></a>  <!-- FIXME: readingLog is not working -->
+      <a ui-sref="readingLog"><h1>Rad <br> Reader</h1></a>
     </section>
       <!-- NOTE: Rad Reader  -->
     <section class="menu-rad-rec" id="center-content">
@@ -50,7 +50,7 @@
 
 
 
-                                      <!-- NOTE: Style the footer -->
+
 <footer class="footer-wrapper">
   <p id="become-a-ninja">become a ninja.</p>
   <input type="text" placeholder="Email Address" id="email-input">
@@ -61,8 +61,6 @@
       <img ng-src='./img/ninja-logo.jpg' alt="Reading Ninja Logo" id="footer-ninja-logo" ng-click='suggestion()'>
     </section>
 </footer>
-
-
 
                         <!-- This is the angular CDN  -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
@@ -83,8 +81,5 @@
 <script src="js/homeView/bookDir.js"></script>
 <script src="js/becomeNinjaView/typingDir.js"></script>
 <script src="js/homeTypingDir/homeTypingDir.js"></script>
-
-
-
 </body>
 </html>

@@ -10,6 +10,10 @@
     letter-spacing: 10px;
 }
 
+.typed-cursor {
+    display: none;
+}
+
 #center-content {
     margin-top: 35px;
 }
@@ -40,10 +44,9 @@
 }
 
 .book-title:hover {
-  transition: scale(1.2);
-  letter-spacing: 10px;
+    transition: scale(1.2);
+    letter-spacing: 10px;
 }
-
 
 
 /* NOTE: above styles the navigation that shows on every page */
@@ -52,53 +55,51 @@
 /*HOME VIEW*/
 
 .hero-img-wrapper {
-  text-align: center;
+    text-align: center;
 }
 
 .hero-img-wrapper>#hero-book {
-  position: relative;
+    position: relative;
     width: 100%;
     height: 635px;
 }
 
-#hero-typing-style{
-  z-index: 50;
-  position: absolute;
-  font-family: 'courier', sans-serif;
-  font-size: 5.5em;
-  color: #fff;
-  bottom: 370px;
-  right: 450px;
-
+#hero-typing-style {
+    z-index: 50;
+    position: absolute;
+    font-family: 'courier', sans-serif;
+    font-size: 5.5em;
+    color: #fff;
+    bottom: 370px;
+    right: 450px;
 }
 
 #home-typing-text {
-  position: absolute;
-  z-index: 50;
-  font-family: 'courier', sans-serif;
-  font-size: 8em;
-  color: #fff;
-  bottom: 250px;
-  right: 100px;
+    position: absolute;
+    z-index: 50;
+    font-family: 'courier', sans-serif;
+    font-size: 8em;
+    color: #fff;
+    bottom: 250px;
+    right: 100px;
 }
 
 #hero-book {
-  z-index: -1;
+    z-index: -1;
 }
 
 .fa-angle-down {
-  color: #fff;
-  font-size: 10em;
-  position: absolute;
-  z-index: 1;
-  margin-top: -150px;
-  width: 100px;
+    color: #fff;
+    font-size: 10em;
+    position: absolute;
+    z-index: 1;
+    margin-top: -150px;
+    width: 100px;
 }
 
-.fa-angle-down:hover{
-  color: #adadad;
+.fa-angle-down:hover {
+    color: #adadad;
 }
-
 
 .center-book-wrapper {
     display: flex;
@@ -115,67 +116,66 @@
 }
 
 .book-style:hover {
-  transform: scale(1.1);
-  opacity: .20;
- }
-
+    transform: scale(1.1);
+    opacity: .20;
+}
 
 .book-recommendation-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px auto;
-
+    display: flex;
+    justify-content: center;
+    margin-top: 10px auto;
 }
+
 
 /* NOTE: font-awesome book icon */
+
 .fa-book {
-  font-size: 4em;
-  padding-top: 5px;
+    font-size: 4em;
+    padding-top: 5px;
 }
 
- .recommendation-style {
-   width: 70%;
-   border-radius: 5px;
-   text-align: center;
-   font-size: 30px;
-   margin-left: 20px;
- }
+.recommendation-style {
+    width: 70%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 20px;
+}
 
 #recommendation-submit {
-  font-family: 'courier', sans-serif;
-  font-size: 2em;
-  margin-left: 10px;
-  margin: 15px 0px 0px 10px;
-  border: solid gray 3px;
-  border-radius: 3px;
+    font-family: 'courier', sans-serif;
+    font-size: 2em;
+    margin-left: 10px;
+    margin: 15px 0px 0px 10px;
+    border: solid gray 3px;
+    border-radius: 3px;
 }
+
+
 /* HACK: button clicking effect */
+
 #recommendation-submit:active {
-  transform: scale(.90);
+    transform: scale(.90);
 }
 
 #second-book-title {
-  color: #FD9337;
+    color: #FD9337;
 }
 
 #third-book-title {
-  font-size: 3em;
-  color: #88D32A;
+    font-size: 3em;
+    color: #88D32A;
 }
 
 .main-becoming-ninja-wrapper {
-  text-align: center;
+    text-align: center;
 }
 
 .fa-long-arrow-right {
-  font-size: 7em;
-  color: #FC4B32;
-  margin-top: -40px;
+    font-size: 7em;
+    color: #FC4B32;
+    margin-top: -40px;
 }
-
-
-
-
 
 .footer-wrapper {
     background: #d8d8d8;
@@ -208,6 +208,7 @@ input {
 #email-input {
     width: 90%;
 }
+
 
 /* HACK: This is how I edit the placeholder */
 
@@ -272,56 +273,56 @@ input {
 }
 
 .main-book-input-wrapper {
-  width: 70%;
-  height: 80px;
-  line-height: 80px;
-  background: #d8d8d8;
-  font-family: 'courier', sans-serif;
-  font-size: 2.5em;
-  color: #FD9337;
-  border: solid #d8d8d8 2px;
-  border-radius: 5px;
-  /*padding: 15px;*/
-  margin-top: 20px;
-  text-align: center;
-  margin: 20px 200px;
+    width: 70%;
+    height: 80px;
+    line-height: 80px;
+    background: #d8d8d8;
+    font-family: 'courier', sans-serif;
+    font-size: 2.5em;
+    color: #FD9337;
+    border: solid #d8d8d8 2px;
+    border-radius: 5px;
+    /*padding: 15px;*/
+    margin-top: 20px;
+    text-align: center;
+    margin: 20px 200px;
 }
+
 
 /*styling becoming a ninja page (Rad Ninja)*/
+
 #typing-text {
-  font-family: 'courier', sans-serif;
-  font-size: 4em;
-  text-align: center;
-  margin-top: 20px;
-  color: #FC4B32;
+    font-family: 'courier', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 20px;
+    color: #FC4B32;
 }
 
-
 .step-one {
-  height: 100vh;
-  width: 100%;
-  border-radius: 10px;
-  background: #FD9337;
-  opacity: .65;
+    height: 100vh;
+    width: 100%;
+    border-radius: 10px;
+    background: #FD9337;
+    opacity: .65;
 }
 
 .step-two {
-  height: 100vh;
-  width: 100%;
-  border-radius: 10px;
-  background: #FC4B32;
-  opacity: .65;
+    height: 100vh;
+    width: 100%;
+    border-radius: 10px;
+    background: #FC4B32;
+    opacity: .65;
 }
 
 .step-three {
-  height: 100vh;
-  width: 100%;
-  border-radius: 10px;
-  background:  #88D32A;
-  opacity: .65;
-  margin-bottom: -40px;
+    height: 100vh;
+    width: 100%;
+    border-radius: 10px;
+    background: #88D32A;
+    opacity: .65;
+    margin-bottom: -40px;
 }
-
 
 
 /*color: #FD9337;
