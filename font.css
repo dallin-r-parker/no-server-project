@@ -1,7 +1,9 @@
-@font-face{
-    font-family: 'ninja';
-    src: url('./fonts/webfonts_Ninja-naruto/Ninja-Naruto.ttf.eot');
-    src: url('./fonts/webfonts_Ninja-naruto/Ninja-Naruto.ttf.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/webfonts_Ninja-naruto/Ninja-Naruto.ttf.woff') format('woff'),
-         url('./fonts/webfonts_Ninja-naruto/Ninja-Naruto.ttf.svg#webfont') format('svg');
+@font-face {
+    font-family: 'Ninja-Naruto';
+    src:url('Ninja-Naruto.ttf.woff') format('woff'),
+        url('Ninja-Naruto.ttf.svg#Ninja-Naruto') format('svg'),
+        url('Ninja-Naruto.ttf.eot'),
+        url('Ninja-Naruto.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
 }

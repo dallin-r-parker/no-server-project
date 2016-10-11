@@ -10,7 +10,10 @@ angular.module('readingApp')
       controller: function($scope, bookRecommendationService){
         $scope.addRecommendation = function(recommendationInput){
           if (!recommendationInput) {
-
+            $('recommendation-submit').on('click', '', function(event) {
+              event.preventDefault();
+              /* Act on the event */
+            });
           }
           else {
             bookRecommendationService.addBook(recommendationInput);
