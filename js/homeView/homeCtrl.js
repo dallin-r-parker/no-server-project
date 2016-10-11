@@ -12,6 +12,10 @@ angular.module('readingApp').controller('homeCtrl', function($scope, mainService
       });
   });
 
+  $('button').click(function(){
+    $('#recommendation-submit').effect("shake");
+  });
+
 
 
 

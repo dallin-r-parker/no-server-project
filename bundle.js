@@ -1,6 +1,6 @@
 angular.module('readingApp').controller('mainCtrl', ["$scope", "mainService", function($scope, mainService) {
 
-
+    
 
 }]);
 
@@ -591,6 +591,7 @@ angular.module('readingApp').service('bookRecommendationService', ["$http", func
     console.log(this.bookRecommendation);
   }
 
+  
 
 }]);
 
@@ -606,6 +607,10 @@ angular.module('readingApp').controller('homeCtrl', ["$scope", "mainService", fu
           );
       return false;
       });
+  });
+
+  $('button').click(function(){
+    $('#recommendation-submit').effect("shake");
   });
 
 
