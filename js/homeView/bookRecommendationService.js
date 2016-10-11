@@ -7,6 +7,6 @@ angular.module('readingApp').service('bookRecommendationService', function($http
     console.log(this.bookRecommendation);
   }
 
-  
+
 
 });

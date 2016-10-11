@@ -9,11 +9,15 @@ angular.module('readingApp')
       },
       controller: function($scope, bookRecommendationService){
         $scope.addRecommendation = function(recommendationInput){
-          bookRecommendationService.addBook(recommendationInput);
-          $scope.recommendationInput = '';
-        }
-    }
+          if (!recommendationInput) {
 
+          }
+          else {
+            bookRecommendationService.addBook(recommendationInput);
+            $scope.recommendationInput = '';
+          }
+        }
+      }
     }
   });
   //restrict with A,E, or AE

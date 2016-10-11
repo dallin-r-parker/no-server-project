@@ -609,8 +609,8 @@ angular.module('readingApp').controller('homeCtrl', ["$scope", "mainService", fu
       });
   });
 
-  $('button').click(function(){
-    $('#recommendation-submit').effect("shake");
+  $('#third-book-title').click(function(){
+    $('#third-book-title').css('color', 'yellow');
   });
 
 
