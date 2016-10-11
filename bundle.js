@@ -498,6 +498,27 @@ angular.module('readingApp').controller('becomeNinjaCtrl', ["$scope", function($
       });
   });
 
+  $(function(){
+      $('#anchor-two').click(function(){
+          $('html, body').animate({
+              scrollTop: $('#step2-color-container').offset().top},
+              2000
+          );
+      return false;
+      });
+  });
+
+  $(function(){
+      $('#anchor-three').click(function(){
+          $('html, body').animate({
+              scrollTop: $('#step3-color-container').offset().top},
+              2000
+          );
+      return false;
+      });
+  });
+
+
 }]);
 
 angular.module('readingApp')
@@ -576,6 +597,19 @@ angular.module('readingApp').service('bookRecommendationService', ["$http", func
 angular.module('readingApp').controller('homeCtrl', ["$scope", "mainService", function($scope, mainService) {
 
     $scope.getImg = mainService.getImg();
+
+    $(function(){
+      $('#anchor-one').click(function(){
+          $('html, body').animate({
+              scrollTop: $('#center-anchor-wrapper').offset().top},
+              2000
+          );
+      return false;
+      });
+  });
+
+
+
 
 }]);
 

@@ -257,9 +257,10 @@ input {
     margin-left: 45px;
 }
 
-.fa-instagram {
+#home-instagram {
     font-size: 1.7em;
-    color: #7E4A43;
+    color: #fff;
+    margin-right: 5px;
 }
 
 
@@ -293,16 +294,16 @@ input {
 
 /*styling becoming a ninja page (Rad Ninja)*/
 
-.becoming-hero-img-wrapper>#hero-forest{
-  width: 100%;
-  height: 620px;
-  opacity: .80;
-}
-
 .becoming-hero-img-wrapper {
   position: relative;
   text-align: center;
   width: 100%;
+}
+
+#hero-forest{
+  width: 100%;
+  height: 620px;
+  opacity: .80;
 }
 
 .typed-cursor {
@@ -327,6 +328,8 @@ input {
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   opacity: .65;
 }
 
@@ -335,18 +338,17 @@ input {
   margin-top: -3px;
 }
 
-.step1-text {
+.step-style-text {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin-top: 230px;
-  margin-right: 40px;
+  margin: auto;
   font-size: 3.5em;
   font-family: 'courier', sans-serif;
-  color: #000;
-  border: solid 3px #fff;
-  width: 100%;
+  color: #fff;
+  border: solid 5px #525252;
+  width: 80%;
   height: 20vh;
   padding: 18px;
 }
@@ -355,33 +357,80 @@ input {
   transform: scale(1.1);
 }
 
-#follow-insta-ninja2 {
-  font-family: 'ninja', sans-serif;
-  color: #000;
-  font-size: 3.2em;
-  margin-top: 600px;
-  margin-left: 200px;
-  letter-spacing: 5px;
+.follow-aside {
+  text-align: center;
+  margin-bottom: 100px;
 }
 
-#insta-styling {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+#second-arrow-down {
+  margin-top: -30px;
+}
+
+#insta-logo-styling {
   color: #fff;
-  font-size: 10em;
-  margin-left: -250px;
-  margin-bottom: -450px;
+  font-size: 6em;
+  font-family: 'ninja', sans-serif;
+}
+
+#at-symbol-styling {
+  color: #fff;
+  font-size: 3em;
 }
 
 #step2-color-container {
   background: #FD9337;
 }
 
-#step3-color-container {
-  background: #fC4B32;
-  margin-bottom: -40px;
+.fa-heart {
+  color: #FC4B32;
+  margin-left: 10px;
+  font-size: 1em;
 }
+
+
+.book-directive-style {
+  margin-bottom: 200px;
+  color: #fff;
+}
+
+#step3-color-container {
+  margin-bottom: -40px;
+  background: #26ADBD;
+}
+
+#third-arrow-down {
+  left: 50%;
+}
+
+.social-logo-position {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 30px;
+  margin-bottom: 75px;
+  font-size: 4em;
+
+}
+
+.hover-fb:hover  {
+  color: #88D32A;
+}
+.hover-twitter:hover  {
+  color: #FD9337;
+}
+.hover-linkedin:hover  {
+  color: #FC4B32;
+}
+.hover-snapchat:hover  {
+  color: #88D32A;
+}
+.hover-insta:hover  {
+  color: #FD9337;
+}
+
+#insta-position {
+  font-size: 4em;
+}
+
 
 
 

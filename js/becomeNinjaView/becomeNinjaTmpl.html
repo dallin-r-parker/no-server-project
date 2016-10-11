@@ -1,26 +1,53 @@
 <!-- NOTE: Style this page with Hayley tomorrow -->
 <section class="becoming-hero-img-wrapper">
-        <typing-dir></typing-dir>
-      <img ng-src='./img/becoming-forest-hero3.png' id="hero-forest">
-      
-      <a href="#step1-color-container" id="anchor-one"><i class="fa fa-angle-down" aria-hidden="true" class="nav-down-arrow"></i></a>
-      <!-- FIXME: need to add anchor jQuery for scrolling down the page -->
+        <typing-dir></typing-dir> <!-- NOTE: Typing text directive -->
+
+      <img ng-src='./img/becoming-forest-hero3.png' id="hero-forest"> <!-- NOTE: background img -->
+      <a href="#step1-color-container" id="anchor-one"><i class="fa fa-angle-down" aria-hidden="true" class="nav-down-arrow"></i></a> <!-- NOTE: down-arrow -->
 </section>
+
+
 
     <section class="step-container" id="step1-color-container">
 <!-- NOTE: I would like to add AOS css to step-one, step-two, & step-three -->
-            <section class="step1-text">
-              <a href="https://www.instagram.com/thereadingninja/">Follow The Reading Ninja On Instagram</a></section>
+            <aside class="step-style-text">
+              <a href="https://www.instagram.com/thereadingninja/" target="_blank">Step One: Follow The Reading Ninja On Instagram</a>
+            </aside>
 
+          <aside class="follow-aside">
+          <a href="https://www.instagram.com/thereadingninja/" target="_blank"> <p id="insta-logo-styling"><span id="different-font"><i class="fa fa-instagram" aria-hidden="true"> </i>@</span>thereadingninja</p></a>
+          <a href="#step2-color-container" id="anchor-two"><i class="fa fa-angle-down" aria-hidden="true" class="nav-down-arrow" id="second-arrow-down"></i></a>
+          </aside>
 
-            <i class="fa fa-instagram" aria-hidden="true" id="insta-styling"></i>
-            <span id="follow-insta-ninja2">thereadingninja</span>
     </section>
 
     <section class="step-container" id="step2-color-container">
-        <span class="text-styling">Step Two:</span>
+        <aside class="step-style-text"><a ui-sref="recommendation">Step Two: Recommend A Book That You<i class="fa fa-heart" aria-hidden="true"></i></a></aside>
+        <section class="book-directive-style">
+              <book-dir></book-dir>
+        </section>
+        <a href="#step3-color-container" id="anchor-three"><i class="fa fa-angle-down" aria-hidden="true" class="nav-down-arrow" id="third-arrow-down"></i></a>
     </section>
 
+
     <section class="step-container" id="step3-color-container">
-        <span class="text-styling">Step Three:</span>
+        <aside class="step-style-text">Step Three: Share With <p style="color: #000; font-size: 1.5em;">ALL</p> Your Friends</aside>
+
+        <aside class="social-logo-position" target="_blank">
+          <div class="hover-fb">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </div>
+          <div class="hover-twitter">
+          <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+          <div class="hover-linkedin">
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+          <div class="hover-snapchat">
+          <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
+          </div>
+          <div class="hover-insta">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </aside>
     </section>
